@@ -13,7 +13,12 @@ while (i) {
 
 //ANSWER:
 
+/*
+La respuesta es 1.
+Por que i-- va disminuyendo las posiciones y la ultima posicion queda en 0. Lo cual seria i = 0; 
 
+Si tenemos que i = 3; entonces seria 0 = 1;
+*/
 
 
 
@@ -41,7 +46,14 @@ while (i++ < 5) alert( i );
 
 //ANSWER:
 
+/*
+++i < 5: Este es un incremento previo. Aquí, i se incrementa antes de que se realice la comparación. Por ejemplo, si i es inicialmente 0, se incrementará a 1 antes de la comparación con 5.
 
+i++ < 5: Este es un incremento posterior. Aquí, i se incrementa después de que se realiza la comparación. Por lo tanto, si i es inicialmente 0, se comparará con 5 antes de incrementarse a 1.
+
+el primer while tiene 4 iteraciones.
+el segundo while tine 5 iteraciones.
+*/
 
 
 
@@ -65,9 +77,14 @@ for (let i = 0; i < 5; i++) alert( i );
 2- The prefix form:
 */
 
+for (let i = 0; i < 5; ++i) alert( i );
+
 //ANSWER:
 
-
+/*
+Ambos iteran desde 0 a 4(ya que es menor a 5 en la condicion).
+Ambas iteraciones iran aumentando de 1 en 1.
+*/
 
 
 
@@ -83,9 +100,11 @@ for (let i = 0; i < 5; i++) alert( i );
 
 //ANSWER:
 
+let numbers = 0;
 
-
-
+for(let i = 1; i <= 5; i++){
+  alert(numbers =  i * 2);
+}
 
 
 
@@ -103,7 +122,12 @@ for (let i = 0; i < 3; i++) {
 
 //ANSWER:
 
+let i = 0;
 
+while(i < 3){
+  alert( `number ${i}!` );
+  i++;
+}
 
 
 
@@ -127,7 +151,11 @@ Run the demo
 //ANSWER
 
 
+let llamada = 0;
 
+while(llamada < 100){
+  llamada = prompt("Ingrese un numero mayor a 100:");
+}
 
 
 
