@@ -181,3 +181,28 @@ P.S. The code should work for any n, not be hard-tuned for any fixed value.
 //ANSWERS
 
 
+function generarPrimos(n) {
+  let primos = [];
+  for(let i = 2; i <= n; i++) {
+      if(esPrimo(i)) {
+          primos.push(i);
+      }
+  }
+  return primos;
+}
+
+function esPrimo(num) {
+  for(let i = 2, sqrt = Math.sqrt(num); i <= sqrt; i++)
+      if(num % i === 0) return false; 
+  return num > 1;
+}
+
+console.log(generarPrimos(10)); // Imprime: [2, 3, 5, 7]
+
+/*
+Este código define dos funciones: generarPrimos(n) y esPrimo(num). La función generarPrimos(n) genera los números primos en el rango de 2 a n y la función esPrimo(num) verifica si un número dado es primo o no.
+
+Por último, console.log(generarPrimos(10)); imprime los números primos en el rango de 2 a 10. Puedes cambiar el número 10 a cualquier otro número para generar números primos hasta ese número.
+
+Este código es bastante eficiente ya que solo verifica los divisores hasta la raíz cuadrada del número, lo que reduce significativamente el número de iteraciones necesarias.
+*/
